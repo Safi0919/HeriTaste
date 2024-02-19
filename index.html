@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Capture and Submission</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <video id="videoElement" autoplay></video>
+        <div id="buttons">
+            <button id="startRecordingBtn">Start Recording</button>
+            <button id="stopRecordingBtn" hidden>Stop Recording</button>
+            <button id="recordAgainBtn" hidden>Record Again</button>
+            <button id="submitBtn" hidden>Submit</button>
+        </div>
+    </div>
+
+    <!-- Summary page content -->
+    <div id="summaryPage" style="display: none;">
+        <h1>Tomato Eggs Receipt</h1>
+
+        <!-- Video element -->
+        <video id="summaryVideo" controls autoplay></video>
+
+        <!-- Summary text -->
+        <h2>Summary</h2>
+        <div id="summary" class="scrollable"></div>
+
+        <!-- Follow-up questions -->
+        <h2>Follow-up Questions</h2>
+        <ul id="followUpQuestions"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
